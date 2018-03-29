@@ -10,12 +10,12 @@ Getting Started
 ---------------
 
 ```bash
-git clone https://github.com/naveenkd26/fortellis-getting-started-gear.git fortellis-starter-kit
+git clone https://github.com/naveenkd26/fortellis-getting-started-gear.git fortellis-getting-started
 
-cd fortellis-starter-kit
+cd fortellis-getting-started
 
 # Navigate to app-starter directory
-cd app-starter-kit
+cd app-starter
 
 # Install NPM dependenciess
 npm install
