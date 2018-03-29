@@ -7,14 +7,14 @@ module.exports = function appointmentsController(appointmentsRepo) {
             // async/await are Ecmascript 2017 features which are available only from node>=v7.10
             // await helps pause the execution until the response from the apicall is available
             // which makes the code execution in synchronous fashion unlike the callback style. 
-            const quoteList = await appointmentsRepo.getAppointments();
-            if (!quoteList.error) {
+            const appointmentList = await appointmentsRepo.getAppointments();
+            if (!appointmentList.error) {
                 res.status(200);
-                res.json(quoteList);
+                res.json(appointmentList);
             }
             else {
                 res.status(500);
-                res.json({ error: "Unable to fetch appointment list." });
+                res.json({ error: appointmentList.error });
             }
         } catch (err) {
             res.status(500);

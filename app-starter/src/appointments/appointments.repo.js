@@ -10,7 +10,7 @@ const request = require('request-promise');
     YOU WILL HAVE TO UPDATE "YOUR_APIKEY" WITH KEY YOU GET WHEN YOU CREATE A SOLUTION at https://developer.fortellis.io/
 */
 const API_CONFIG = {
-    "apikey": "MuenQhLIgbhRAQZAfkkAtNPs4Ztp1p9G",
+    "apikey": "YOUR_API_KEY",
     "exchange-org-id": "test"
 }
 
@@ -36,7 +36,10 @@ module.exports = {
             .catch(function (err) {
                 console.log('API call failed with http status code : ' + err.statusCode);
                 console.log('Error response object: ' + JSON.stringify(err.response));
-                return err;
+                if(err.statusCode === 401){
+                    return {error: "Unauthorized, you might have forgotten to update API_KEY in src/appointments/appointments.repo.js, Please check!"}
+                }
+                return {error: JSON.stringify(err.response.body)}
             });
     }
 }

@@ -1,7 +1,7 @@
-app-starter-kit
+app-starter
 =======================
 
-Boiler-plate Nodejs applicaiton to quickly build prototypes
+Boiler-plate Nodejs application to quickly build prototypes
 
 ### Requirements
 Node >8.x
