@@ -33,13 +33,13 @@ describe('appointments/app.appointments.controller', async function () {
             expect(resMock.json.args[0][0]).to.deep.eql(apointmentsListMock);
         })
 
-        it('should return 500 if unable to fetch the list from upstream server', async function () {
+        it('should return 500 with error message if unable to fetch the list from upstream server', async function () {
             const errorRes = { error: 'ERROR' };
             appointmentsRepoMock.getAppointments = function(){
                 return Promise.resolve(errorRes)
             }
             const res = await appointmentsController.list(reqMock, resMock);
-            expect(resMock.json.args[0][0]).to.deep.eql({error: 'Unable to fetch appointment list.'});
+            expect(resMock.json.args[0][0]).to.deep.eql({error: errorRes.error});
             expect(resMock.status.args[0][0]).to.eql(500);
         })
     })

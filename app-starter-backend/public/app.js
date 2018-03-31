@@ -1,7 +1,7 @@
 
 function getQuoteList() {
     alert('fetching appointments...')
-    window.fetch('/quote', {
+    window.fetch('/appointments', {
         method: 'GET',
         })
         .then(response => response.json())

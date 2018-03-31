@@ -10,7 +10,7 @@ const request = require('request-promise');
     YOU WILL HAVE TO UPDATE "YOUR_APIKEY" WITH KEY YOU GET WHEN YOU CREATE A SOLUTION at https://developer.fortellis.io/
 */
 const API_CONFIG = {
-    "apikey": "YOUR_API_KEY",
+    "apikey": "YOUR_APIKEY",
     "exchange-org-id": "test"
 }
 
