@@ -1,4 +1,4 @@
-app-backend-starter
+app-starter-backend
 =======================
 
 Boiler-plate for nodejs back-end application to integrate with [Fortellis](https://developer.fortellis.io/).
@@ -14,12 +14,10 @@ Getting Started
 ---------------
 
 ```bash
-git clone https://github.com/naveenkd26/fortellis-getting-started-gear.git fortellis-getting-started
-
 cd fortellis-getting-started
 
-# Navigate to app-starter directory
-cd app-backend-starter
+# Navigate to app-starter-backend directory
+cd app-starter-backend
 
 # Install NPM dependenciess
 npm install

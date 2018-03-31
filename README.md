@@ -1,2 +1,2 @@
-# fortellis-getting-started-gear
-Starter kits to build apps on fortellis developer platform
+# fortellis-getting-started
+Resources and Starter kits to build applications using [Fortellis developer platform](https://developer.fortellis.io/).
