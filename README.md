@@ -1,6 +1,8 @@
 backend-starter-seed
 =======================
 
+This repo and sample code helps the back-end (node.js express server) securely communiate with Fortellis platform using the API key. 
+
 Boiler-plate for nodejs back-end application to integrate with [Fortellis](https://developer.fortellis.io/).
 This seed comes with an /appointments route which fetches the list of appointments from [Appointments API](https://developer.fortellis.io/api-reference/vehicle-service/appointment-api) 
 
