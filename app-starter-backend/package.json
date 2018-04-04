@@ -1,14 +1,14 @@
 {
-  "name": "app-starter-backend",
+  "name": "backend-starter-seed",
   "version": "1.0.0",
-  "description": "Starter kit to prototype application",
+  "description": "Starter kit to prototype your application",
   "main": "index.js",
   "scripts": {
     "test:watch": "mocha test tests/unit/**/*.spec.js --watch",
     "test": "mocha test tests/unit/**/*.spec.js",
     "start": "nodemon app.js localhost 3000"
   },
-  "author": "naveenkumard26@gmail.com",
+  "author": "naveen.dokuparthi@cdk.com",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
