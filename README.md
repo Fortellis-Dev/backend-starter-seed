@@ -1,4 +1,4 @@
-app-starter-backend
+backend-starter-seed
 =======================
 
 Boiler-plate for nodejs back-end application to integrate with [Fortellis](https://developer.fortellis.io/).
