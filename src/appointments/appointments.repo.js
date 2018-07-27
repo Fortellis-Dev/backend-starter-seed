@@ -11,14 +11,14 @@ const request = require('request-promise');
 */
 const API_CONFIG = {
     "apikey": "YOUR_APIKEY",
-    "subscriptionId": "test"
+    "Subscription-Id": "test"
 }
 
 const HEADERS = {
     "Accept": "*/*",
     "Content-Type": "application/json",
     "apikey": API_CONFIG.apikey,
-    "subscriptionId": API_CONFIG["subscriptionId"]
+    "Subscription-Id": API_CONFIG["Subscription-Id"]
 }
 
 module.exports = {
