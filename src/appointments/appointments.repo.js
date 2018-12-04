@@ -12,7 +12,7 @@ const request = require('request-promise');
 const API_CONFIG = {
     "apikey": "YOUR_APIKEY",
     "apisecret": "YOUR_APISECRET",
-    "exchange-org-id": "test"
+    "Subscription-Id": "test"
 }
 
 const HEADERS = {
@@ -20,7 +20,7 @@ const HEADERS = {
     "Content-Type": "application/json",
     "Authorization": "Basic " +
         Buffer.from(API_CONFIG.apisecret + ':' + API_CONFIG.apikey).toString('base64'),
-    "exchange-org-id": API_CONFIG["exchange-org-id"]
+    "Subscription-Id": API_CONFIG["Subscription-Id"]
 }
 
 module.exports = {
