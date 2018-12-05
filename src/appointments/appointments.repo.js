@@ -19,7 +19,7 @@ const HEADERS = {
     "Accept": "*/*",
     "Content-Type": "application/json",
     "Authorization": "Basic " +
-        Buffer.from(API_CONFIG.apisecret + ':' + API_CONFIG.apikey).toString('base64'),
+        Buffer.from(API_CONFIG.apikey + ':' + API_CONFIG.apisecret).toString('base64'),
     "Subscription-Id": API_CONFIG["Subscription-Id"]
 }
 
