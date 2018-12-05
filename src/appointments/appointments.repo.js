@@ -7,18 +7,20 @@
 const request = require('request-promise');
 
 /*
-    YOU WILL HAVE TO UPDATE "YOUR_APIKEY" WITH KEY YOU GET WHEN YOU CREATE A SOLUTION at https://developer.fortellis.io/
+    YOU WILL HAVE TO UPDATE "YOUR_APIKEY" and "YOUR_APISECRET" WITH KEY YOU GET WHEN YOU CREATE A SOLUTION at https://developer.fortellis.io/
 */
 const API_CONFIG = {
     "apikey": "YOUR_APIKEY",
-    "exchange-org-id": "test"
+    "apisecret": "YOUR_APISECRET",
+    "Subscription-Id": "test"
 }
 
 const HEADERS = {
     "Accept": "*/*",
     "Content-Type": "application/json",
-    "apikey": API_CONFIG.apikey,
-    "exchange-org-id": API_CONFIG["exchange-org-id"]
+    "Authorization": "Basic " +
+        Buffer.from(API_CONFIG.apikey + ':' + API_CONFIG.apisecret).toString('base64'),
+    "Subscription-Id": API_CONFIG["Subscription-Id"]
 }
 
 module.exports = {

@@ -21,7 +21,7 @@ cd fortellis-getting-started
 # Navigate to app-starter-backend directory
 cd app-starter-backend
 
-# Install NPM dependenciess
+# Install NPM dependencies
 npm install
 
 # Run tests single run
@@ -37,6 +37,6 @@ npm run test:watch
 **Note:** This project uses [Nodemon](https://github.com/remy/nodemon).
 It watches for any changes in the app and automatically restarts the server. This will save you a lot of time in the long run, because you won't need to manually restart the server each time you make a small change in code.
 
-Obtaining API Key
+Obtaining an API Key
 ------------------
-This project need access to [Appointments API](https://developer.fortellis.io/api-reference/vehicle-service/appointment-api) available in the Fortellis platform which requires a valid API_KEY. You can create one by following this [guide](https://community.fortellis.io/community/blog/how-can-i-try-out-api). Make sure you select Appointments which registering your solution and update the API_KEY in src/appointments/appointments.repo.js
+This project need access to [Appointments API](https://developer.fortellis.io/api-reference/vehicle-service/appointment-api) available in the Fortellis platform which requires a valid API key and API secret. You can create them by following this [guide](https://community.fortellis.io/community/blog/how-can-i-try-out-api). Make sure you select Appointments when registering your solution and update apikey and apisecret in src/appointments/appointments.repo.js
